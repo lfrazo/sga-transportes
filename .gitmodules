@@ -1,0 +1,3 @@
+[submodule "client-gateway-sga-transportes"]
+	path = client-gateway-sga-transportes
+	url = https://github.com/lfrazo/client-gateway-sga-transportes.git
