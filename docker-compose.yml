@@ -21,4 +21,4 @@ services:
     environment:
       - PORT=3000
       - NATS_SERVERS=nats://nats-server:4222
-      - DATABASE_URL=postgresql://1aad5f779c0e7798b3ac647549a9a3ba5272f020b8e42ef213176ae51191fd0b:sk_eBL_8T6dYJnph0kOq3Leg@db.prisma.io:5432/postgres?sslmode=require
+      - DATABASE_URL=${CUSTOMERS_DATABASE_URL}
