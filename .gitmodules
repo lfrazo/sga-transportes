@@ -1,3 +1,6 @@
 [submodule "client-gateway-sga-transportes"]
 	path = client-gateway-sga-transportes
 	url = https://github.com/lfrazo/client-gateway-sga-transportes.git
+[submodule "customers-ms"]
+	path = customers-ms
+	url = https://github.com/lfrazo/customers-ms.git
