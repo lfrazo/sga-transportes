@@ -24,3 +24,15 @@ services:
       - PORT=3000
       - NATS_SERVERS=nats://nats-server:4222
       - DATABASE_URL=${CUSTOMERS_DB_URL}
+  customers-db:
+    image: postgres:17.7-alpine
+    container_name: customers-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: customers-db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
